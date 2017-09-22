@@ -1,0 +1,10 @@
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades.Tests/bin/Debug/Grades.Tests.dll
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades.Tests/bin/Debug/Grades.Tests.pdb
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades.Tests/bin/Debug/nunit.framework.dll
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades.Tests/bin/Debug/nunit.framework.xml
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades.Tests/obj/Debug/Grades.Tests.csprojResolveAssemblyReference.cache
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades.Tests/obj/Debug/Grades.Tests.csproj.CoreCompileInputs.cache
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades.Tests/obj/Debug/Grades.Tests.dll
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades.Tests/obj/Debug/Grades.Tests.pdb
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades.Tests/bin/Debug/Grades.exe
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades.Tests/bin/Debug/Grades.pdb
