@@ -1,0 +1,5 @@
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades/bin/Debug/Grades.exe
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades/bin/Debug/Grades.pdb
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades/obj/x86/Debug/Grades.csproj.CoreCompileInputs.cache
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades/obj/x86/Debug/Grades.exe
+/Users/jovalle/csharp/CS_fundamentals/Grades/Grades/obj/x86/Debug/Grades.pdb
