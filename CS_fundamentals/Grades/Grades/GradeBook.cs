@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+
 namespace Grades
 {
     public class GradeBook
@@ -14,19 +16,30 @@ namespace Grades
             }
             set
             {
-                if (!String.IsNullOrEmpty(value))
-                {
-                    if(_name != value)
-                    {
-                        NameChangedEventArgs args = new NameChangedEventArgs();
-                        args.ExistingName = _name;
-                        args.NewName = value;
-                        NameChanged(this, args);
-                        _name = value;
-                    }
+                if(string.IsNullOrEmpty(value)){
+                    throw new ArgumentException("Name cannot be null or empty");
                 }
+                
+                if(_name != value && NameChanged != null)
+                {
+                    NameChangedEventArgs args = new NameChangedEventArgs();
+                    args.ExistingName = _name;
+                    args.NewName = value;
+                    NameChanged(this, args);
+                    _name = value;
+                }
+
             }
         }
+
+        public void WriteGrade(TextWriter destiniation)
+        {
+            for (int i = 0; i < grades.Count; i++)
+            {
+                destiniation.WriteLine(grades[i]);
+            }
+        }
+
         private string _name;
 
         // adding event keyword makes it onlly possible to += or -= but not =
