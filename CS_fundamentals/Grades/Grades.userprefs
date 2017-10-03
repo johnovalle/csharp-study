@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{75177729-53EC-4466-8704-3D2708915264}|Default">
   <MonoDevelop.Ide.ItemProperties.Grades PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Grades.Tests/GradeBookTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Grades.Tests/Types/ReferenceTypeTests.cs">
     <Files>
-      <File FileName="Grades/Program.cs" Line="10" Column="13" />
-      <File FileName="Grades/GradeBook.cs" Line="19" Column="10" />
+      <File FileName="Grades/Program.cs" Line="9" Column="13" />
+      <File FileName="Grades/GradeBook.cs" Line="9" Column="28" />
       <File FileName="Grades/GradeStatistics.cs" Line="4" Column="5" />
-      <File FileName="Grades.Tests/GradeBookTests.cs" Line="38" Column="22" />
+      <File FileName="Grades.Tests/GradeBookTests.cs" Line="41" Column="54" />
+      <File FileName="Grades.Tests/Types/ReferenceTypeTests.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
@@ -15,7 +16,7 @@
               <Node name="Grades" expanded="True">
                 <Node name="Tests" expanded="True">
                   <Node name="GradeBookTests" expanded="True">
-                    <Node name="ComputesHighestGrade" selected="True" />
+                    <Node name="ComputesAverageGrade" selected="True" />
                   </Node>
                   <Node name="Test" expanded="True" />
                 </Node>

@@ -33,6 +33,7 @@
   <ItemGroup>
     <Compile Include="Test.cs" />
     <Compile Include="GradeBookTests.cs" />
+    <Compile Include="Types\ReferenceTypeTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -42,6 +43,9 @@
       <Project>{75177729-53EC-4466-8704-3D2708915264}</Project>
       <Name>Grades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Types\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
