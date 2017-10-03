@@ -6,12 +6,37 @@ namespace Grades
     {
         private List<float> grades = new List<float>();
 
-        public string Name;
+        public string Name
+        {
+            get
+            {
+                return _name;    
+            }
+            set
+            {
+                if (!String.IsNullOrEmpty(value))
+                {
+                    if(_name != value)
+                    {
+                        NameChangedEventArgs args = new NameChangedEventArgs();
+                        args.ExistingName = _name;
+                        args.NewName = value;
+                        NameChanged(this, args);
+                        _name = value;
+                    }
+                }
+            }
+        }
+        private string _name;
+
+        // adding event keyword makes it onlly possible to += or -= but not =
+        public event NameChangedDelegate NameChanged;
 
         public GradeBook()
         {
-            
+            _name = "Empty";    
         }
+
         public void AddGrade(float grade) 
         {
             grades.Add(grade);
