@@ -38,6 +38,8 @@
     <Compile Include="GradeStatistics.cs" />
     <Compile Include="NameChangedDelegate.cs" />
     <Compile Include="NameChangedEventArgs.cs" />
+    <Compile Include="ThrowAwayGradeBook.cs" />
+    <Compile Include="GradeTracker.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

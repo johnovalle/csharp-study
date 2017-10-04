@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{75177729-53EC-4466-8704-3D2708915264}|Default">
   <MonoDevelop.Ide.ItemProperties.Grades PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Grades/GradeBook.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Grades/GradeTracker.cs">
     <Files>
-      <File FileName="Grades/Program.cs" Line="14" Column="34" />
-      <File FileName="Grades/GradeBook.cs" Line="37" Column="51" />
+      <File FileName="Grades/Program.cs" Line="51" Column="33" />
+      <File FileName="Grades/GradeBook.cs" Line="35" Column="32" />
       <File FileName="Grades/GradeStatistics.cs" Line="33" Column="30" />
+      <File FileName="Grades/ThrowAwayGradeBook.cs" Line="9" Column="1" />
+      <File FileName="Grades/GradeTracker.cs" Line="8" Column="21" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
