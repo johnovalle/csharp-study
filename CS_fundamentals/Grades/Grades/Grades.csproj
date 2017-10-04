@@ -40,6 +40,7 @@
     <Compile Include="NameChangedEventArgs.cs" />
     <Compile Include="ThrowAwayGradeBook.cs" />
     <Compile Include="GradeTracker.cs" />
+    <Compile Include="IGradeTracker.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

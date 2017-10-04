@@ -7,20 +7,20 @@ namespace Grades
     {
         public static void Main(string[] args)
         {
-            GradeTracker book = CreateGradeBook();
+            IGradeTracker book = CreateGradeBook();
 
-            // GetBookName(book);
+            //GetBookName(book);
             AddGrades(book);
             SaveGrades(book);
             WriteResults(book);
         }
 
-        private static GradeTracker CreateGradeBook()
+        private static IGradeTracker CreateGradeBook()
         {
             return new ThrowAwayGradeBook();
         }
 
-        private static void WriteResults(GradeTracker book)
+        private static void WriteResults(IGradeTracker book)
         {
             GradeStatistics stats = book.ComputeStatistics();
             // Console.WriteLine(stats.AverageGrade);
@@ -28,10 +28,10 @@ namespace Grades
             // Console.WriteLine(stats.LowestGrade);
             // book.Name = "John's Grade Book";
 
-            // book.NameChanged += new NameChangedDelegate(OnNameChanged2);
+            book.NameChanged += new NameChangedDelegate(OnNameChanged2);
             // book.NameChanged += OnNameChanged2;
 
-            // book.Name = "Grade Book";
+            book.Name = "Grade Book";
             // book.Name = null;
 
 
@@ -41,7 +41,7 @@ namespace Grades
             WriteResult(stats.Description, stats.LetterGrade);
         }
 
-        private static void SaveGrades(GradeTracker book)
+        private static void SaveGrades(IGradeTracker book)
         {
 			// using statement makes sure unmanaged resource is properly delt with
 			// similar to wrapping in try catch with Close / Dispose in finally block
@@ -53,14 +53,14 @@ namespace Grades
             }
         }
 
-        private static void AddGrades(GradeTracker book)
+        private static void AddGrades(IGradeTracker book)
         {
             book.AddGrade(91);
             book.AddGrade(89.5f);
             book.AddGrade(75);
         }
 
-        private static void GetBookName(GradeTracker book)
+        private static void GetBookName(IGradeTracker book)
         {
 			book.NameChanged += new NameChangedDelegate(OnNameChanged);
 
