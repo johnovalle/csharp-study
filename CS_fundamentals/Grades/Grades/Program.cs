@@ -28,11 +28,16 @@ namespace Grades
             // Console.WriteLine(stats.LowestGrade);
             // book.Name = "John's Grade Book";
 
-            book.NameChanged += new NameChangedDelegate(OnNameChanged2);
+            // book.NameChanged += new NameChangedDelegate(OnNameChanged2);
             // book.NameChanged += OnNameChanged2;
 
-            book.Name = "Grade Book";
+            // book.Name = "Grade Book";
             // book.Name = null;
+
+            foreach (float grade in book)
+            {
+                Console.WriteLine(grade);
+            }
 
 
             WriteResult("Average", stats.AverageGrade);

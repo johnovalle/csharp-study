@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
@@ -8,7 +9,10 @@ namespace Grades
     {
         protected List<float> grades = new List<float>();
 
-
+        public override IEnumerator GetEnumerator()
+        {
+            return grades.GetEnumerator();
+        }
 
         public override void WriteGrades(TextWriter destiniation)
         {
